@@ -24,6 +24,6 @@ export class PostService {
   }
 
   getAllPostsByUser(name: string): Observable<PostModel[]> {
-    return this.http.get<PostModel[]>('https://dashboard.heroku.com/apps/redit-clone-api/api/posts/by-user/' + name);
+    return this.http.get<PostModel[]>('https://redit-clone-api.herokuapp.com/api/posts/by-user/' + name);
   }
 }
